@@ -1,0 +1,170 @@
+/* General Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF; /* Alice Blue - Light pastel blue */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer sticks to the bottom */
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #B0E0E6; /* Powder Blue - Slightly darker pastel blue */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 2.2em;
+    color: #2F4F4F; /* Dark Slate Gray for contrast */
+}
+
+/* Main Content - Payment Section */
+.payment-section {
+    flex-grow: 1; /* Allows this section to take up available space */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.payment-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4682B4; /* Steel Blue - A nice blue accent */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.payment-section p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* QR Code Wrapper */
+.qr-code-wrapper {
+    background-color: #FFFFFF; /* White background for the QR code */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block; /* Allows auto width based on content */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    border: 1px solid #ADD8E6; /* Light Blue border */
+}
+
+.qr-code {
+    max-width: 250px; /* Adjust QR code size as needed */
+    height: auto;
+    display: block; /* Removes extra space below image */
+    margin: 0 auto; /* Center the image within its wrapper */
+}
+
+/* Instructions Section */
+.instructions {
+    background-color: #E0FFFF; /* Light Cyan - Another very light pastel blue */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.instructions h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #6A5ACD; /* Slate Blue - A nice contrasting pastel */
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.instructions ol {
+    list-style-type: decimal;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.instructions ol li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.instructions .note {
+    text-align: center;
+    font-style: italic;
+    margin-top: 25px;
+    color: #778899; /* Light Slate Gray */
+    font-size: 1em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #B0C4DE; /* Light Steel Blue - A muted blue */
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .payment-section h2 {
+        font-size: 1.6em;
+    }
+
+    .qr-code {
+        max-width: 200px; /* Smaller QR code on smaller screens */
+    }
+
+    .instructions {
+        padding: 20px;
+    }
+
+    .instructions h3 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .payment-section h2 {
+        font-size: 1.4em;
+    }
+
+    .qr-code {
+        max-width: 180px; /* Even smaller QR code */
+    }
+
+    .payment-section p {
+        font-size: 1em;
+    }
+
+    .instructions ol li {
+        font-size: 0.95em;
+    }
+}
